@@ -19,7 +19,9 @@ Praticar os conceitos iniciais de programação, incluindo:
 │  │  └─ script.js
 │  ├─ 📁 exercicio2
 │  │  └─ script.js
-│  └─ ...
+│  ├─ 📁 Lista2
+│  │  ├─ 📁 ValidacaoDatas
+│  │      .....
 ├─ 📄 README.md
 
 
