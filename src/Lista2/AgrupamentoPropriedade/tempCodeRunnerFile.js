@@ -25,4 +25,4 @@ const vendas = [
 ];
 
 const resultado = totalPorCliente(vendas);
-console.log(resultado); // { João: 250, Maria: 250, Ana: 300 }
+console.log(resultado); // { João: 250, Maria: 250, Ana:

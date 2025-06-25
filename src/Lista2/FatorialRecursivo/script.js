@@ -15,3 +15,6 @@ function fatorial(n) {
     // Chamada recursiva: n * fatorial(n - 1)
     return n * fatorial(n - 1);
 }
+
+// Exemplo de uso
+console.log(fatorial(5)); // 120

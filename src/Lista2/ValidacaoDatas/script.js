@@ -23,3 +23,6 @@ function ehDataValida(dia, mes, ano) {
 
     return true;
 }
+
+// Exemplo de uso
+console.log(ehDataValida(29, 2, 2021)); // true

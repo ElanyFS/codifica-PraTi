@@ -26,13 +26,4 @@ const paresConvertidos = objetoParaPares(objeto);
 console.log(paresConvertidos); // [ ['a', 1], ['b',
 // 2], ['c', 3] ]
 // Testando com outro exemplo
-const pares2 = [['x', 10], ['y', 20], ['z',
-    30]];
-
-
-const objeto2 = paresParaObjeto(pares2);
-console.log(objeto2); // { x: 10, y: 20, z: 30 }
-const paresConvertidos2 = objetoParaPares(objeto2);
-console.log(paresConvertidos2); // [ ['x', 10], ['y',
-// 20], ['z', 30] ]
-
+const pares2 = [['x', 10], ['y', 20], ['z',30]];

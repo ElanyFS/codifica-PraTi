@@ -20,3 +20,17 @@ function memoize(fn) {
         return result;
     };
 }
+
+// Exemplo de uso
+function fatorial(n) {
+    if (n < 0) {
+        throw new Error("O fatorial não está definido para números negativos.");
+    }
+    if (n === 0) {
+        return 1;
+    }
+    return n * fatorial(n - 1);
+}
+
+const memoizedFatorial = memoize(fatorial);
+console.log(memoizedFatorial(5)); // 120

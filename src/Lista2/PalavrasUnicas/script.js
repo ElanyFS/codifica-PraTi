@@ -21,3 +21,8 @@ function palavrasUnicas(frase) {
     
     return unicas; // Retorna o array de palavras únicas
 }
+
+// Exemplo de uso
+const frase = "olá olá mundo mundo";
+const resultado = palavrasUnicas(frase);
+console.log(resultado);
