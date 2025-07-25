@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+/* ========================== */
+/* 🔝 HEADER */
+/* ========================== */
+
+/* Css Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 4rem;
+  background: transparent;
+  border-bottom: black 1px solid;
+  box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.5s ease;
+  z-index: 99999;
+  backdrop-filter: blur(10px);
+}
+
+.header-navigation ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header-navigation ul li {
+  width: auto;
+  text-align: center;
+  padding: 0;
+}
+
+header .soon {
+  color: black;
+  font-size: 2rem;
+}
+
+.header-navigation-iten {
+  cursor: pointer;
+  position: relative;
+}
+
+.header-navigation-iten::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  border-radius: 4px;
+  scale: 0 1;
+  transform-origin: left;
+  transition: scale 0.35s;
+}
+
+.header-navigation-iten:hover::before {
+  scale: 1;
+}
+
+header > button {
+  display: none;
+}
+
+/* Media */
+@media (max-width: 600px) {
+  header {
+    padding: 0 2rem;
+  }
+  .header-navigation ul {
+    position: absolute;
+    right: -100%;
+    top: 100%;
+    padding: 0.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0;
+    align-items: end;
+    background-color: #fff;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    z-index: 9999;
+    width: 100%;
+  }
+
+  .header-navigation .nav-mobile {
+    right: 0 !important;
+  }
+
+  .header-navigation ul li {
+    width: 100%;
+    text-align: end;
+    padding: 1rem 0.2rem;
+  }
+
+  .header-navigation ul li:hover {
+    background-color: rgba(91, 91, 91, 0.267);
+  }
+
+  .header-navigation-iten:hover::before {
+    scale: 0;
+  }
+
+  header > button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: black;
+  }
+
+  header > button > i {
+    font-size: 2rem;
+  }
+}
